@@ -4,7 +4,7 @@ import { MasterCRPWallet } from "../src/types/MasterCRPWallet";
 
 async function main() {
   // We get the contract to deploy
-  const predPerBlock = 5000000000;
+  const predPerBlock = 10000000000;
 
   const wallet: MasterCRPWallet = (await ethers.getContractAt("MasterCRPWallet", WALLET!)) as MasterCRPWallet;
   const Farm = await ethers.getContractFactory("MasterCRP");
